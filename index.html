@@ -37,7 +37,6 @@
         .profile-icon {
             width: 40px;
             height: 40px;
-            background-color: #8B4513;
             border-radius: 50%;
         }
 
@@ -86,17 +85,265 @@
         }
 
         .contact-info {
-            position: absolute;
-            bottom: 2rem;
+            margin-top: 20px;
             display: flex;
             gap: 2rem;
         }
 
         .contact-item {
             display: flex;
+            width: fit-content;
             align-items: center;
             gap: 0.5rem;
             color: #333;
+        }
+
+        .about-section {
+            padding: 4rem 2rem;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .about-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-logo span {
+            color: #2E8B57;
+        }
+
+        .about-text {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+        }
+
+        .about-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .wave-decoration {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .features-section {
+            padding: 4rem 2rem;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .feature-column {
+            position: relative;
+        }
+
+        .feature-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        .trajnime .feature-title {
+            color: #2E8B57;
+        }
+
+        .feature-description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .bursa-box {
+            border: 2px solid #8A2BE2;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .feature-list {
+            list-style: none;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .check-icon {
+            width: 24px;
+            height: 24px;
+            background-color: #2E8B57;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .bursa .check-icon {
+            background-color: #000;
+        }
+
+        .check-icon::before {
+            content: "✓";
+            color: white;
+            font-size: 14px;
+        }
+
+        .wave-top-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            z-index: 0;
+        }
+
+        .wave-bottom-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            z-index: 0;
+        }
+
+        /* New styles for focus section */
+        .focus-section {
+            padding: 4rem 2rem;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .focus-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+
+        .focus-title {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 2rem;
+            color: #000;
+        }
+
+        .focus-list {
+            list-style: none;
+            counter-reset: focus-counter;
+        }
+
+        .focus-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .focus-number {
+            width: 40px;
+            height: 40px;
+            background-color: #2E8B57;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .focus-content {
+            flex: 1;
+        }
+
+        .focus-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        .focus-content p {
+            font-size: 1.1rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* New styles for events section */
+        .events-section {
+            padding: 4rem 2rem;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .events-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .events-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .events-title {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #2E8B57;
+            margin-bottom: 1.5rem;
+        }
+
+        .events-description {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #333;
+            max-width: 900px;
         }
 
         @media (max-width: 768px) {
@@ -115,12 +362,38 @@
             .cta-buttons {
                 flex-direction: column;
             }
+
+            .about-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .about-text {
+                font-size: 1.2rem;
+            }
+
+            .features-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .focus-item {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .focus-title, .events-title {
+                font-size: 2rem;
+            }
+
+            .events-image {
+                height: 300px;
+            }
         }
     </style>
 </head>
 <body>
     <header class="header">
-        <img src="/placeholder.svg?height=50&width=100" alt="BeYouth Logo" class="logo">
+        <img src="https://c8.alamy.com/zooms/9/d1ffba6e5ea74367ab9c352d8990aa95/2c18nma.jpg" alt="BeYouth Logo" class="logo">
         <nav class="nav-menu">
             <a href="#">FAQJA KRYESORE</a>
             <a href="#">INTERSHIPE & BURSA</a>
@@ -128,7 +401,9 @@
             <a href="#">EVENTE</a>
             <a href="#">ME KONTAKTO</a>
         </nav>
-        <div class="profile-icon"></div>
+        <div>
+          <img width="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgy_L4G6SLdjy2TrmuY742Vzk8y6463uC5qg&s" alt="BeYouth Logo">
+        </div>
     </header>
 
     <main class="hero">
@@ -152,6 +427,143 @@
             </div>
         </div>
     </main>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="about-logo"><span>BE</span>YOUTH</h2>
+                <p class="about-text">Portali Youth & Education është krijuar për të fuqizuar të rinjtë në Tiranë përmes burimeve të ndryshme.</p>
+            </div>
+            <div>
+                <img src="https://youthculture.com/wp-content/uploads/2020/06/diverse-teens-hands-together-concept-PWVR9YL-1024x683.jpg" alt="Youth with Soccer Ball" class="about-image">
+            </div>
+        </div>
+        <svg class="wave-decoration" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path fill="#2E8B57" fill-opacity="0.2" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </section>
+    
+    <section class="about-section">
+        <div class="about-container">
+           <div>
+                <img src="https://www.eseibusinessschool.com/wp-content/uploads/2023/02/pexels-edmond-dantes-4344340-scaled.jpg" alt="Youth with Soccer Ball" class="about-image">
+            </div>
+            <div class="about-content">
+                <h2 class="about-logo"><span>Internshipe</span></h2>
+                <p class="about-text">Portali ofron praktika që ofrojnë përvojë pune dhe zhvillim të aftësive për individët e rinj.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-container">
+            <div class="feature-column trajnime">
+                <svg class="wave-top-left" viewBox="0 0 200 200">
+                    <path fill="#2E8B57" fill-opacity="0.2" d="M0,0 L200,0 L200,200 C150,180 100,150 50,100 C25,75 10,50 0,0 Z"/>
+                </svg>
+                <div style="position: relative; z-index: 1;">
+                    <h2 class="feature-title">TRAJNIME</h2>
+                    <p class="feature-description">Seksioni i trajnimeve në portalin rinor ofron mundësi trajnimi falas për rininë, duke mbuluar fusha të ndryshme akademike dhe zhvillimin e aftësive profesionale.</p>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <span class="check-icon"></span>
+                            <span>Trajnime akademike në lëndë të ndryshme</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="check-icon"></span>
+                            <span>Kurse për zhvillimin e aftësive profesionale</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="check-icon"></span>
+                            <span>Trajnime për përdorimin e teknologjisë dhe mjeteve digjitale</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feature-column bursa">
+                <div style="position: relative; z-index: 1;">
+                    <h2 class="feature-title">BURSA</h2>
+                        <p class="feature-description">Seksioni i bursave në portalin rinor ndihmon nxënësit dhe studentët të përballojnë shpenzimet e arsimit</p>
+                    </div>
+                    <ul class="feature-list">
+                        <li class="feature-item">
+                            <span class="check-icon"></span>
+                            <span>Bursa shkollore për nxënës dhe studentë të shkollave dhe universiteteve publike</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="check-icon"></span>
+                            <span>Informacione dhe udhëzime për aplikimin për bursa shkollore</span>
+                        </li>
+                        <li class="feature-item">
+                            <span class="check-icon"></span>
+                            <span>Konsulencë për ata që kanë nevojë për ndihmë në përgatitjen e dokumenteve të aplikimit</span>
+                        </li>
+                    </ul>
+                </div>
+                <svg class="wave-bottom-right" viewBox="0 0 200 200">
+                    <path fill="#2E8B57" fill-opacity="0.2" d="M200,200 L0,200 L0,0 C50,20 100,50 150,100 C175,125 190,150 200,200 Z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+    
+    <section class="events-section">
+        <div class="events-container">
+            <img src="https://www.inclusion-europe.eu/wp-content/uploads/2019/01/inclusion-europe-whatwedo-events-scaled.jpg" alt="Youth Events" class="events-image">
+            <h2 class="events-title">EVENTE</h2>
+            <p class="events-description">
+                Seksioni i eventeve ofron mundësi për rininë të angazhohet në ngjarje kulturore, sociale dhe profesionale. Ai nxit zhvillimin personal dhe bashkëpunimin, duke krijuar mundësi për rininë të përfshihet në aktivitete që pasurojnë jetën e tyre dhe kontribuojnë në forcimin e komunitetit.
+            </p>
+        </div>
+        <svg class="wave-decoration" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path fill="#2E8B57" fill-opacity="0.2" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </section>
+
+    <section class="focus-section">
+        <div class="focus-container">
+            <h2 class="focus-title">FOKUSI KRYESOR</h2>
+            <ul class="focus-list">
+                <li class="focus-item">
+                    <div class="focus-number">1</div>
+                    <div class="focus-content">
+                        <h3>Zhvillim Front-end</h3>
+                        <p>Përdorim i React.js për ndërfaqet dinamike për përdoruesit dhe TailwindCSS për dizajn responsive.</p>
+                    </div>
+                </li>
+                <li class="focus-item">
+                    <div class="focus-number">2</div>
+                    <div class="focus-content">
+                        <h3>Zhvillim Back-end</h3>
+                        <p>Përdorim i Node.js për operacione të fuqishme nga ana e serverit që sigurojnë performancë të lartë.</p>
+                    </div>
+                </li>
+                <li class="focus-item">
+                    <div class="focus-number">3</div>
+                    <div class="focus-content">
+                        <h3>Menaxhim database</h3>
+                        <p>Përdorim MySQL dhe PostgreSQL për të ruajtur të dhënat.</p>
+                    </div>
+                </li>
+                <li class="focus-item">
+                    <div class="focus-number">4</div>
+                    <div class="focus-content">
+                        <h3>Siguria</h3>
+                        <p>Përfshin praktikat më të mira për të siguruar API-të dhe për të mbrojtur në mënyrë efektive të dhënat e përdoruesit.</p>
+                    </div>
+                </li>
+                <li class="focus-item">
+                    <div class="focus-number">5</div>
+                    <div class="focus-content">
+                        <h3>Pershtatshmeria</h3>
+                        <p>Përputhshmëri mes pajisjeve dhe madhësive të ekranit duke përmirësuar përvojën e përdoruesit.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <svg class="wave-decoration" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path fill="#2E8B57" fill-opacity="0.2" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+        </svg>
+    </section>
 </body>
 </html>
-
